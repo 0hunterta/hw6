@@ -33,7 +33,7 @@ struct MyStringHash {
 			if(idx>=0 && idx<n) v = letterDigitToNumber(k[idx]);
 			blockValue = blockValue * 36ULL + v;
 		}
-		w[i] = blockValue;
+		w[NUM_BLOCKS - 1 - i] = blockValue;
 	}
 	unsigned long long h=0;
 	for(int i=0; i<NUM_BLOCKS; ++i) {
